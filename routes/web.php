@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/phpinfo', function () {
+    phpinfo();
+})->name('phpinfo');
+
 Route::get('/', function () {
     return view('welcome');
 });
